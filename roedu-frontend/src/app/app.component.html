@@ -162,9 +162,13 @@
                       ><strong>{{ userPoints }}</strong> pct</span
                     >
                   </div>
+                  <div class="dropdown-divider"></div>
+                  <button (click)="logout()" class="dropdown-item logout-dropdown-btn">
+                    <span class="dropdown-icon">🚪</span>
+                    <span>Deconectare</span>
+                  </button>
                 </div>
               </div>
-              <button (click)="logout()" class="logout-btn">Deconectare</button>
             </div>
           </ng-container>
           <ng-container *ngIf="!isLoggedIn">
